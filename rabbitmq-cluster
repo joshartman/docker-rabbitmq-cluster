@@ -8,7 +8,7 @@ if [ -z "$CLUSTER_WITH" -o "$CLUSTER_WITH" = "$hostname" ]; then
   rabbitmq-server
 else
   echo "Running as clustered server"
-  /usr/sbin/rabbitmq-server -detached
+  /opt/rabbitmq/sbin/rabbitmq-server -detached
   rabbitmqctl stop_app
 
   echo "Joining cluster $CLUSTER_WITH"

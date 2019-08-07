@@ -19,4 +19,4 @@ if [ "$ERLANG_COOKIE" ]; then
 fi
 
 chown rabbitmq:rabbitmq /var/lib/rabbitmq
-exec gosu rabbitmq ./docker-entrypoint.sh "$@"
+exec su-exec rabbitmq /usr/local/bin/docker-entrypoint.sh "$@"
