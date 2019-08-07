@@ -1,7 +1,7 @@
 Docker images to run RabbitMQ cluster. It extends the official image with a rabbitmq-cluster script that does the magic.
 
 It is based on the version of https://github.com/harbur/docker-rabbitmq-cluster and has been modified to work with the official rabbitmq:3.7.15-management-alpine image.
-(Use su-exec instead of gosu, /opt/rabbitmq instead of /usr/ and the location of docket-entrypoint.sh changed to /usr/local/bin)
+(Use su-exec instead of gosu, /opt/rabbitmq instead of /usr/ and the location of docker-entrypoint.sh changed to /usr/local/bin)
 
 # Building
 
